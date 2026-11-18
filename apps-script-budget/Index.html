@@ -1,0 +1,983 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#342b3b">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Наша свадьба">
+  <meta name="description" content="Удобная мобильная свадебная смета: цены, сценарии, подрядчики и оплаты.">
+  <title>Наша свадьба · Общая смета Игната и Леры</title>
+<style>
+:root{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Inter,Roboto,"Helvetica Neue",Arial,sans-serif;color:#30283b;background:#f8f6f2;font-synthesis:none;-webkit-tap-highlight-color:transparent;--ink:#30283b;--secondary:#817987;--line:#e9e4e5;--surface:#fff;--bg:#f8f6f2;--accent:#9a655f;--purple:#6f5a83;--soft:#f2ebeb;--green:#36846e;--red:#b8525c;--shadow:0 12px 32px rgba(70,50,70,.055)}
+*{box-sizing:border-box}body{margin:0;min-height:100vh}button,input,textarea,select{font:inherit}button{cursor:pointer}button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:3px solid rgba(160,99,119,.4);outline-offset:2px}button{border:0}a{color:var(--purple)}.app{max-width:1040px;margin:0 auto;min-height:100vh;padding:0 16px 116px}.topbar{height:78px;display:flex;align-items:center;justify-content:space-between;gap:8px}.brand{display:flex;align-items:center;gap:10px}.brandmark{width:42px;height:42px;border-radius:16px;background:#342b3b;color:#fff;display:flex;align-items:center;justify-content:center;font-family:Georgia,serif;font-size:21px;letter-spacing:-3px;padding-right:4px}.brand b{font-size:18px;font-weight:750;letter-spacing:-.65px}.eyebrow{font-size:11px;color:var(--secondary);font-weight:650;letter-spacing:.08em;text-transform:uppercase}.brand small{display:block;color:var(--secondary);font-size:12px;margin-top:2px}.iconbtn{width:43px;height:43px;display:inline-flex;align-items:center;justify-content:center;border-radius:15px;background:#fff;border:1px solid var(--line);color:var(--ink)}.iconbtn svg,.nav-item svg,.btn svg{width:19px;height:19px;stroke:currentColor;fill:none;stroke-width:1.9;stroke-linecap:round;stroke-linejoin:round}.heading{display:flex;align-items:flex-end;justify-content:space-between;gap:12px;margin:16px 0 16px}.heading h1{font-family:Georgia,'Times New Roman',serif;font-weight:500;letter-spacing:-1.2px;font-size:32px;line-height:1.07;margin:5px 0 0}.heading p{margin:8px 0 0;font-size:13px;color:var(--secondary);line-height:1.5}.section-title{font-size:18px;font-weight:770;margin:24px 0 12px;letter-spacing:-.5px}.hero{position:relative;background:linear-gradient(128deg,#382d45 0%,#665063 70%,#805d68 100%);color:#fff;border-radius:27px;padding:25px 22px 20px;overflow:hidden;box-shadow:0 16px 38px rgba(46,34,56,.2)}.hero::before{content:"";position:absolute;width:250px;height:250px;border:1px solid rgba(255,255,255,.13);border-radius:50%;right:-100px;top:-132px;box-shadow:0 0 0 35px rgba(255,255,255,.025),0 0 0 85px rgba(255,255,255,.02)}.hero-label{color:#e8dce7;font-size:12px;font-weight:670;position:relative}.hero-amount{font-size:39px;font-weight:740;letter-spacing:-1.8px;margin:8px 0 4px;position:relative;font-variant-numeric:tabular-nums}.hero-under{font-size:12px;color:#f5dee8;position:relative}.hero-progress{height:9px;border-radius:40px;background:#ffffff35;margin-top:24px;overflow:hidden;position:relative}.hero-progress>div{height:100%;background:linear-gradient(90deg,#e6b1a3,#f4ded0);border-radius:40px;transition:width .2s}.hero-progress.over>div{background:#f7afa0}.hero-meta{display:flex;justify-content:space-between;gap:12px;margin-top:9px;position:relative;font-size:12px;color:#ede1e9}.hero-meta strong{color:#fff}.scenario-panel{margin-top:16px}.scroller{display:flex;overflow-x:auto;scrollbar-width:none;gap:8px;padding:2px 2px 8px;margin:0 -2px}.scroller::-webkit-scrollbar{display:none}.chip{border:1px solid #e8e1e5;background:#fff;white-space:nowrap;padding:11px 15px;border-radius:14px;color:#6f6672;font-size:13px;font-weight:680}.chip.active{background:#342b3b;color:#fff;border-color:#342b3b}.note{font-size:12px;color:var(--secondary);line-height:1.5;margin:4px 0}.stat-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:12px}.stat{padding:17px;background:var(--surface);border:1px solid var(--line);border-radius:18px;min-width:0}.stat-label{font-size:12px;color:var(--secondary);margin-bottom:8px}.stat-num{font-size:20px;white-space:nowrap;font-weight:780;letter-spacing:-.8px;font-variant-numeric:tabular-nums}.stat-sub{font-size:11px;color:var(--secondary);margin-top:5px}.positive{color:var(--green)}.negative{color:var(--red)}.card{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:16px;box-shadow:var(--shadow)}.block{background:#fff;border:1px solid var(--line);border-radius:19px;padding:14px}.category-bars{display:flex;flex-direction:column;gap:15px}.bar-title{display:flex;align-items:center;justify-content:space-between;font-size:13px;gap:12px;margin-bottom:7px}.bar-title span{color:#665c69}.bar-title b{white-space:nowrap;font-size:13px}.track{height:7px;background:#efebee;border-radius:10px;overflow:hidden}.track>div{height:100%;border-radius:10px;background:#9c7992}.topitems{display:flex;flex-direction:column;gap:0}.topitem{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:13px 0;border-bottom:1px solid var(--line);background:transparent;text-align:left;color:var(--ink);width:100%}.topitem:last-child{border-bottom:0;padding-bottom:0}.topitem:first-child{padding-top:0}.topitem strong{font-size:13px}.topitem small{display:block;color:var(--secondary);font-size:11px;margin-top:4px}.topitem .val{font-weight:770;white-space:nowrap}.muted{color:var(--secondary)}.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;background:#342b3b;color:white;border-radius:14px;padding:13px 17px;font-size:13px;font-weight:750;min-height:46px}.btn.secondary{color:#3a3040;background:#f2eef1}.btn.border{color:#4f4255;background:white;border:1px solid var(--line)}.btn.danger{background:#f9ecec;color:#a6444d}.btn.full{width:100%}.btn.sm{padding:10px 13px;min-height:38px;font-size:12px}.btn:disabled{opacity:.5}.spaced{display:flex;align-items:center;justify-content:space-between;gap:10px}.micro-summary{display:flex;justify-content:space-between;align-items:center;background:#f1e9e9;padding:13px;border-radius:15px;margin-bottom:12px;font-size:12px}.micro-summary b{font-size:17px;color:var(--ink)}.search{display:flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);padding:0 14px;border-radius:15px;margin-bottom:12px;height:47px}.search input{width:100%;border:0;outline:0;background:transparent;font-size:14px;color:var(--ink)}.search-icon{font-size:17px;color:#998f9c}.category-group{border:1px solid var(--line);background:#fff;border-radius:18px;margin:10px 0;overflow:hidden}.category-group summary{display:flex;align-items:center;gap:10px;padding:15px;cursor:pointer;list-style:none}.category-group summary::-webkit-details-marker{display:none}.category-symbol{display:flex;align-items:center;justify-content:center;width:38px;height:38px;flex:0 0 38px;background:#f7f0f2;border-radius:12px;font-size:19px}.category-name{flex:1;min-width:0}.category-name b{display:block;font-size:14px;letter-spacing:-.25px}.category-name small{font-size:11px;color:var(--secondary);margin-top:3px;display:block}.category-amount{white-space:nowrap;font-size:13px;font-weight:790}.chevron{font-size:17px;color:#a299a7;margin-left:4px;transform:rotate(0);transition:transform .15s}.category-group[open] .chevron{transform:rotate(90deg)}.expense-entry{border-top:1px solid var(--line);padding:13px 15px;display:flex;gap:12px;align-items:center;min-height:70px}.expense-entry.disabled{opacity:.5}.expense-entry .entry-main{min-width:0;flex:1}.entry-title{font-size:13px;font-weight:690;line-height:1.35}.entry-sub{font-size:11px;color:var(--secondary);margin-top:5px}.entry-price{font-size:14px;font-weight:770;white-space:nowrap}.entry-status{font-size:10px;font-weight:690;margin-top:6px;text-align:right;color:var(--secondary)}.entry-arrow{color:#b4a7b3;font-size:17px}.expense-entry button{all:unset;cursor:pointer;display:flex;align-items:center;gap:10px;width:100%}.expense-entry button:focus-visible{outline:3px solid #b99ca7}.fab{position:fixed;right:max(18px,calc((100vw - 1032px)/2));bottom:calc(99px + env(safe-area-inset-bottom));height:50px;padding:0 19px;border-radius:17px;z-index:4;box-shadow:0 8px 28px rgba(50,35,60,.22);background:#342b3b;color:#fff;font-weight:730;font-size:13px}.empty{text-align:center;padding:38px 23px;background:#fff;border:1px dashed #d8cdd2;border-radius:20px}.empty-icon{font-size:36px}.empty h3{font-size:17px;margin:12px 0 6px}.empty p{font-size:12px;color:var(--secondary);line-height:1.5}.offer-entry{padding:15px 16px;margin:11px 0}.offer-head{display:flex;gap:10px;justify-content:space-between}.offer-head b{font-size:15px}.offer-head span{font-size:11px;color:var(--secondary)}.pill{display:inline-block;font-size:10px;font-weight:760;color:#7c5b71;background:#f8eef3;border-radius:20px;padding:5px 9px}.pill.green{background:#e7f3ed;color:#26725d}.pill.gray{background:#f1eff1;color:#757076}.offer-cost{font-weight:770;font-size:20px;margin:12px 0 6px}.offer-info{font-size:12px;color:var(--secondary);line-height:1.6;white-space:pre-wrap}.offer-actions{display:flex;gap:8px;margin-top:12px}.check-progress{background:#fff;border:1px solid var(--line);padding:16px;border-radius:18px}.checklist-entry{display:flex;align-items:flex-start;gap:11px;border-bottom:1px solid var(--line);padding:15px 1px}.checklist-entry:last-child{border:0}.check-toggle{width:25px;height:25px;display:grid;place-items:center;flex:0 0 25px;border:2px solid #c9bcc7;border-radius:9px;background:#fff;color:white;font-weight:bold}.check-toggle.checked{background:var(--green);border-color:var(--green)}.check-content{flex:1;min-width:0}.check-question{font-size:13px;font-weight:660;line-height:1.45}.check-question.done{color:#8f8591;text-decoration:line-through;text-decoration-color:#d1c5ce}.check-meta{color:var(--secondary);font-size:11px;margin-top:6px}.bottom-nav{position:fixed;bottom:0;left:0;width:100%;z-index:9;background:rgba(255,255,255,.95);border-top:1px solid #e9e4e9;backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);padding:8px 10px calc(8px + env(safe-area-inset-bottom));display:flex;justify-content:center;box-shadow:0 -8px 20px rgba(46,36,52,.035)}.nav-inner{width:100%;max-width:600px;display:grid;grid-template-columns:repeat(4,1fr);gap:4px}.nav-item{background:transparent;color:#958a97;border-radius:14px;display:flex;flex-direction:column;align-items:center;gap:4px;padding:8px 2px;min-height:56px;font-size:10px;font-weight:670}.nav-item.active{color:#4e3a5a;background:#f6f0f3}.nav-item svg{width:21px;height:21px}.overlay{position:fixed;inset:0;z-index:20;background:rgba(29,23,35,.57);display:flex;justify-content:center;align-items:flex-end;animation:fade .15s ease}.sheet{width:100%;max-width:650px;background:#fff;border-radius:25px 25px 0 0;max-height:93dvh;overflow:auto;overscroll-behavior:contain;padding:0 19px calc(20px + env(safe-area-inset-bottom));box-shadow:0 -12px 60px rgba(23,16,30,.12)}.sheet-top{position:sticky;top:0;z-index:2;background:#fff;padding:10px 0 14px;border-bottom:1px solid var(--line);margin-bottom:15px}.handle{width:36px;height:4px;border-radius:10px;background:#e1dce1;margin:0 auto 13px}.sheet-heading{display:flex;justify-content:space-between;align-items:center;gap:10px}.sheet-heading h2{font-size:19px;letter-spacing:-.45px;margin:0}.sheet-heading button{color:#807586;background:#f5f1f3;width:34px;height:34px;border-radius:12px;font-size:21px}.field{margin:13px 0}.field label{display:block;color:#655b67;font-weight:710;font-size:12px;margin:0 0 7px}.field .helper{font-size:11px;color:#938992;margin-top:6px;line-height:1.5}.field input,.field select,.field textarea{width:100%;min-height:45px;border-radius:12px;border:1px solid #e2dce2;background:#fbf9f9;color:#332a37;padding:11px 12px;font-size:15px;outline:none}.field textarea{resize:vertical;min-height:73px}.fields2{display:grid;grid-template-columns:1fr 1fr;gap:11px}.switch-line{display:flex;align-items:center;justify-content:space-between;padding:12px 0;gap:14px}.switch-line b{font-size:13px}.switch-line small{display:block;color:var(--secondary);font-size:11px;margin-top:4px}.switch{position:relative;display:block;width:48px;height:29px;flex:0 0 48px}.switch input{opacity:0;width:0;height:0}.switch span{position:absolute;inset:0;background:#ddd5dd;border-radius:40px;transition:.2s}.switch span:after{position:absolute;content:"";width:23px;height:23px;left:3px;top:3px;border-radius:50%;background:#fff;transition:.2s}.switch input:checked+span{background:#6f5a83}.switch input:checked+span:after{transform:translateX(19px)}.sheet-caption{font-size:11px;color:var(--secondary);line-height:1.45;padding:12px;background:#f8f5f5;border-radius:12px}.sheet-actions{display:flex;flex-direction:column;gap:9px;margin-top:20px}.sheet-actions.two{display:grid;grid-template-columns:1fr 1fr}.del-line{margin-top:18px;text-align:center}.del-line button{background:transparent;color:#b45f65;text-decoration:underline;font-size:12px}.warning{padding:12px;background:#fff0e9;color:#915248;border-radius:13px;font-size:12px;line-height:1.5}.inline-caption{margin:14px 0 3px;color:#a1959d;font-size:10px;font-weight:760;text-transform:uppercase;letter-spacing:.08em}.hint-card{display:flex;align-items:flex-start;gap:11px;margin-top:16px;padding:14px;border:1px solid #e7e0e3;background:#fff;border-radius:17px;font-size:12px;color:#69606c;line-height:1.5}.hint-card b{color:#3e3344}.config-list{display:flex;flex-direction:column;gap:10px}.config-list .btn{justify-content:flex-start}.toast{position:fixed;bottom:calc(100px + env(safe-area-inset-bottom));left:50%;transform:translateX(-50%);background:#342b3b;color:#fff;padding:11px 16px;border-radius:13px;z-index:30;font-size:12px;box-shadow:0 12px 30px #30283b4b;white-space:nowrap;max-width:90vw}.warning-stripe{font-size:11px;color:#95594c;background:#fff1e7;border-radius:12px;padding:10px 12px;margin:10px 0}.desktop-note{display:none}.half-muted{color:#a79aaa}
+@keyframes fade{from{opacity:0}to{opacity:1}}@media(min-width:750px){.app{padding-left:30px;padding-right:30px}.content-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:18px}.content-grid > div{min-width:0}.hero{padding:32px}.hero-amount{font-size:48px}.stat-grid{grid-template-columns:repeat(2,1fr)}.heading h1{font-size:37px}.desktop-note{display:block}.bottom-nav{max-width:490px;bottom:18px;left:50%;transform:translateX(-50%);border:1px solid var(--line);border-radius:23px;padding:6px;box-shadow:0 9px 30px #28213220}.sheet{border-radius:26px;margin-bottom:4vh;max-height:90vh}.overlay{align-items:flex-end}.fab{bottom:90px}}
+@media(max-width:350px){.hero-amount{font-size:33px}.stat-num{font-size:17px}.fields2{grid-template-columns:1fr}.brand b{font-size:16px}}
+
+#app{display:none}
+#shared-auth{position:fixed;inset:0;z-index:999;display:flex;align-items:center;justify-content:center;padding:22px;background:linear-gradient(155deg,#342b3b,#806270);color:#33283b}
+#shared-auth[hidden]{display:none}
+.shared-login{width:100%;max-width:410px;background:#fff;border-radius:26px;padding:28px 23px;box-shadow:0 24px 80px rgba(0,0,0,.17)}
+.shared-login h1{font:normal 32px Georgia,serif;letter-spacing:-.7px;margin:0 0 8px}
+.shared-login p{color:#716775;font-size:13px;line-height:1.55;margin:8px 0 20px}
+.shared-login label{display:block;font-size:12px;font-weight:700;margin-bottom:8px}
+.shared-login input{width:100%;box-sizing:border-box;border:1px solid #e2dce2;background:#faf8f8;border-radius:14px;font-size:16px;padding:14px;min-height:51px}
+.shared-login button{width:100%;min-height:48px;margin-top:13px;border-radius:14px;background:#342b3b;color:white;font-weight:750}
+.shared-login small{display:block;color:#8b808b;font-size:11px;line-height:1.5;margin-top:20px}
+#login-error{color:#b14a50;font-size:12px;margin-top:10px;min-height:14px;line-height:1.45}
+#shared-sync{display:none;position:sticky;top:0;z-index:11;background:#e6f3ea;color:#2a6951;padding:10px 15px;font-size:12px;line-height:1.4;align-items:center;gap:10px;justify-content:space-between}
+#shared-sync.warn{background:#fff0e6;color:#974b33}
+#shared-sync .sync-controls{display:flex;gap:8px;flex-wrap:wrap}
+#shared-sync button{border:1px solid currentColor;background:transparent;border-radius:9px;color:inherit;padding:7px 9px;font-size:11px;font-weight:bold}
+</style>
+</head>
+<body>
+<div id="shared-auth">
+  <div class="shared-login">
+    <div style="font-size:27px;margin-bottom:14px">💍</div>
+    <h1>Наша свадьба</h1><p>Одна смета для Игната и Леры. Изменения сохраняются в закрытой Google-таблице и синхронизируются между телефонами.</p>
+    <form id="shared-auth-form"><label for="shared-key-input">Ваш личный ключ доступа</label><input id="shared-key-input" type="password" minlength="24" autocomplete="off" placeholder="Вставьте ключ из Apps Script" required />
+      <button id="shared-auth-submit" type="submit">Открыть общую смету</button></form>
+    <div id="login-error" role="alert"></div>
+    <small>Используйте разные ключи для двух участников. Данные и ключи не публикуются в GitHub. Для работы нужен интернет.</small>
+  </div>
+</div>
+<div id="shared-sync" aria-live="polite"><span id="shared-sync-status"></span><span class="sync-controls"><button id="shared-refresh" type="button">Обновить</button><button id="shared-backup" type="button" hidden>Скачать мои изменения</button></span></div>
+<div id="app" class="app"></div>
+<div id="modal-root"></div>
+<div id="toast-root" aria-live="polite"></div>
+<script>
+'use strict';
+const INITIAL={
+  "budget": 800000,
+  "guests": 50,
+  "reserve": 8,
+  "expenses": [
+    {
+      "id": "ex7",
+      "category": "Образы",
+      "title": "Обручальные кольца",
+      "city": "Оба",
+      "unit": "комплект",
+      "qty": 1,
+      "prices": {
+        "Эконом": 22000,
+        "База": 40000,
+        "Комфорт": 70000,
+        "В бюджет": 30000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Оба кольца, гравировка и изменение размера отдельно",
+      "followGuests": false
+    },
+    {
+      "id": "ex8",
+      "category": "Образы",
+      "title": "Платье Леры",
+      "city": "Москва / Переславль",
+      "unit": "шт.",
+      "qty": 1,
+      "prices": {
+        "Эконом": 35000,
+        "База": 60000,
+        "Комфорт": 100000,
+        "В бюджет": 45000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Уточнить подгонку, хранение, чистку",
+      "followGuests": false
+    },
+    {
+      "id": "ex9",
+      "category": "Образы",
+      "title": "Костюм Игната",
+      "city": "Москва",
+      "unit": "комплект",
+      "qty": 1,
+      "prices": {
+        "Эконом": 22000,
+        "База": 35000,
+        "Комфорт": 55000,
+        "В бюджет": 25000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Рубашка, ремень и галстук могут быть отдельно",
+      "followGuests": false
+    },
+    {
+      "id": "ex10",
+      "category": "Образы",
+      "title": "Обувь Леры",
+      "city": "Москва",
+      "unit": "пара",
+      "qty": 1,
+      "prices": {
+        "Эконом": 5000,
+        "База": 10000,
+        "Комфорт": 18000,
+        "В бюджет": 5000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "",
+      "followGuests": false
+    },
+    {
+      "id": "ex11",
+      "category": "Образы",
+      "title": "Обувь Игната",
+      "city": "Москва",
+      "unit": "пара",
+      "qty": 1,
+      "prices": {
+        "Эконом": 5000,
+        "База": 9000,
+        "Комфорт": 16000,
+        "В бюджет": 5000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "",
+      "followGuests": false
+    },
+    {
+      "id": "ex12",
+      "category": "Образы",
+      "title": "Аксессуары и подгонка",
+      "city": "Москва",
+      "unit": "комплект",
+      "qty": 1,
+      "prices": {
+        "Эконом": 5000,
+        "База": 12000,
+        "Комфорт": 20000,
+        "В бюджет": 6000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Украшения, бельё, пошив/подгонка, аксессуары",
+      "followGuests": false
+    },
+    {
+      "id": "ex13",
+      "category": "Москва",
+      "title": "Фотограф (Москва)",
+      "city": "Москва",
+      "unit": "услуга",
+      "qty": 1,
+      "prices": {
+        "Эконом": 12000,
+        "База": 20000,
+        "Комфорт": 35000,
+        "В бюджет": 12000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Отдельная московская съёмка; часы, ретушь, исходники",
+      "followGuests": false
+    },
+    {
+      "id": "ex14",
+      "category": "Москва",
+      "title": "Гостиница (Москва)",
+      "city": "Москва",
+      "unit": "ночь",
+      "qty": 1,
+      "prices": {
+        "Эконом": 8000,
+        "База": 14000,
+        "Комфорт": 25000,
+        "В бюджет": 10000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Изменить число ночей в количестве",
+      "followGuests": false
+    },
+    {
+      "id": "ex15",
+      "category": "Москва",
+      "title": "Визажист (Москва)",
+      "city": "Москва",
+      "unit": "услуга",
+      "qty": 1,
+      "prices": {
+        "Эконом": 7000,
+        "База": 11000,
+        "Комфорт": 18000,
+        "В бюджет": 9000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Пробный макияж, ранний выезд, причёска?",
+      "followGuests": false
+    },
+    {
+      "id": "ex16",
+      "category": "Фото и видео",
+      "title": "Фотограф свадьбы",
+      "city": "Переславль",
+      "unit": "услуга",
+      "qty": 1,
+      "prices": {
+        "Эконом": 35000,
+        "База": 55000,
+        "Комфорт": 85000,
+        "В бюджет": 40000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Часы, обработка, срок выдачи, дорога",
+      "followGuests": false
+    },
+    {
+      "id": "ex17",
+      "category": "Фото и видео",
+      "title": "Видеограф свадьбы",
+      "city": "Переславль",
+      "unit": "услуга",
+      "qty": 1,
+      "prices": {
+        "Эконом": 35000,
+        "База": 55000,
+        "Комфорт": 95000,
+        "В бюджет": 40000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Клип, фильм, доп. часы, исходники",
+      "followGuests": false
+    },
+    {
+      "id": "ex18",
+      "category": "Площадка и еда",
+      "title": "Аренда площадки",
+      "city": "Переславль",
+      "unit": "день",
+      "qty": 1,
+      "prices": {
+        "Эконом": 30000,
+        "База": 50000,
+        "Комфорт": 90000,
+        "В бюджет": 30000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Если аренда включена в банкет, поставить 0",
+      "followGuests": false
+    },
+    {
+      "id": "ex19",
+      "category": "Площадка и еда",
+      "title": "Банкет на гостя",
+      "city": "Переславль",
+      "unit": "чел.",
+      "qty": 50,
+      "prices": {
+        "Эконом": 4000,
+        "База": 5000,
+        "Комфорт": 6500,
+        "В бюджет": 4500
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Проверить меню, пробный ужин, персонал",
+      "followGuests": true
+    },
+    {
+      "id": "ex20",
+      "category": "Площадка и еда",
+      "title": "Напитки на гостя",
+      "city": "Переславль",
+      "unit": "чел.",
+      "qty": 50,
+      "prices": {
+        "Эконом": 900,
+        "База": 1500,
+        "Комфорт": 2300,
+        "В бюджет": 900
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Алкоголь/безалкогольные, лёд, доставка",
+      "followGuests": true
+    },
+    {
+      "id": "ex21",
+      "category": "Площадка и еда",
+      "title": "Обслуживание и сборы",
+      "city": "Переславль",
+      "unit": "услуга",
+      "qty": 1,
+      "prices": {
+        "Эконом": 0,
+        "База": 10000,
+        "Комфорт": 25000,
+        "В бюджет": 0
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Пробковый/сервисный сбор, уборка, продление",
+      "followGuests": false
+    },
+    {
+      "id": "ex22",
+      "category": "Оформление",
+      "title": "Декор площадки",
+      "city": "Переславль",
+      "unit": "услуга",
+      "qty": 1,
+      "prices": {
+        "Эконом": 35000,
+        "База": 60000,
+        "Комфорт": 110000,
+        "В бюджет": 35000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Арка, столы, свет и монтаж: уточнить состав",
+      "followGuests": false
+    },
+    {
+      "id": "ex23",
+      "category": "Оформление",
+      "title": "Букет и бутоньерка",
+      "city": "Переславль",
+      "unit": "комплект",
+      "qty": 1,
+      "prices": {
+        "Эконом": 5000,
+        "База": 9000,
+        "Комфорт": 15000,
+        "В бюджет": 6000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Проверить, не включены ли в декор",
+      "followGuests": false
+    },
+    {
+      "id": "ex24",
+      "category": "Оформление",
+      "title": "Свадебный торт",
+      "city": "Переславль",
+      "unit": "чел.",
+      "qty": 50,
+      "prices": {
+        "Эконом": 400,
+        "База": 550,
+        "Комфорт": 800,
+        "В бюджет": 400
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Цена на гостя для приблизительного расчёта",
+      "followGuests": true
+    },
+    {
+      "id": "ex25",
+      "category": "Развлечения",
+      "title": "Ведущий",
+      "city": "Переславль",
+      "unit": "услуга",
+      "qty": 1,
+      "prices": {
+        "Эконом": 35000,
+        "База": 50000,
+        "Комфорт": 80000,
+        "В бюджет": 35000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Часы, программа, выезд, продление",
+      "followGuests": false
+    },
+    {
+      "id": "ex26",
+      "category": "Развлечения",
+      "title": "DJ / звук / свет",
+      "city": "Переславль",
+      "unit": "услуга",
+      "qty": 1,
+      "prices": {
+        "Эконом": 15000,
+        "База": 25000,
+        "Комфорт": 40000,
+        "В бюджет": 15000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Проверить пакет с ведущим / площадкой",
+      "followGuests": false
+    },
+    {
+      "id": "ex27",
+      "category": "Подготовка",
+      "title": "Визажист (Переславль)",
+      "city": "Переславль",
+      "unit": "услуга",
+      "qty": 1,
+      "prices": {
+        "Эконом": 6000,
+        "База": 9000,
+        "Комфорт": 14000,
+        "В бюджет": 7000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Прическа и репетиция: уточнить",
+      "followGuests": false
+    },
+    {
+      "id": "ex28",
+      "category": "Подготовка",
+      "title": "Причёска/укладка",
+      "city": "Переславль",
+      "unit": "услуга",
+      "qty": 1,
+      "prices": {
+        "Эконом": 0,
+        "База": 7000,
+        "Комфорт": 12000,
+        "В бюджет": 4000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Если причёска включена в визаж, поставить 0",
+      "followGuests": false
+    },
+    {
+      "id": "ex29",
+      "category": "Логистика",
+      "title": "Трансфер гостей",
+      "city": "Москва / Переславль",
+      "unit": "услуга",
+      "qty": 1,
+      "prices": {
+        "Эконом": 15000,
+        "База": 25000,
+        "Комфорт": 45000,
+        "В бюджет": 15000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Оценка зависит от маршрута и числа мест",
+      "followGuests": false
+    },
+    {
+      "id": "ex30",
+      "category": "Логистика",
+      "title": "Дорога подрядчиков",
+      "city": "Переславль",
+      "unit": "услуга",
+      "qty": 1,
+      "prices": {
+        "Эконом": 5000,
+        "База": 10000,
+        "Комфорт": 20000,
+        "В бюджет": 5000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Если входит в гонорар, поставить 0",
+      "followGuests": false
+    },
+    {
+      "id": "ex31",
+      "category": "Логистика",
+      "title": "Проживание подрядчиков",
+      "city": "Переславль",
+      "unit": "услуга",
+      "qty": 1,
+      "prices": {
+        "Эконом": 0,
+        "База": 7000,
+        "Комфорт": 14000,
+        "В бюджет": 0
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": false,
+      "paid": 0,
+      "actual": null,
+      "note": "Включить, если обязует договор",
+      "followGuests": false
+    },
+    {
+      "id": "ex32",
+      "category": "Организация",
+      "title": "Регистрация / церемония",
+      "city": "Оба",
+      "unit": "услуга",
+      "qty": 1,
+      "prices": {
+        "Эконом": 3000,
+        "База": 10000,
+        "Комфорт": 30000,
+        "В бюджет": 3000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Госпошлина, выездная церемония, техника",
+      "followGuests": false
+    },
+    {
+      "id": "ex33",
+      "category": "Организация",
+      "title": "Координатор дня",
+      "city": "Переславль",
+      "unit": "услуга",
+      "qty": 1,
+      "prices": {
+        "Эконом": 0,
+        "База": 20000,
+        "Комфорт": 40000,
+        "В бюджет": 0
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": false,
+      "paid": 0,
+      "actual": null,
+      "note": "Опционально, но снижает нагрузку в день свадьбы",
+      "followGuests": false
+    },
+    {
+      "id": "ex34",
+      "category": "Организация",
+      "title": "Приглашения и полиграфия",
+      "city": "Оба",
+      "unit": "комплект",
+      "qty": 1,
+      "prices": {
+        "Эконом": 2000,
+        "База": 5000,
+        "Комфорт": 9000,
+        "В бюджет": 2000
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": true,
+      "paid": 0,
+      "actual": null,
+      "note": "Электронные приглашения могут удешевить",
+      "followGuests": false
+    },
+    {
+      "id": "ex35",
+      "category": "Организация",
+      "title": "Подарки гостям",
+      "city": "Переславль",
+      "unit": "чел.",
+      "qty": 50,
+      "prices": {
+        "Эконом": 0,
+        "База": 150,
+        "Комфорт": 300,
+        "В бюджет": 0
+      },
+      "choice": "В бюджет",
+      "custom": null,
+      "enabled": false,
+      "paid": 0,
+      "actual": null,
+      "note": "Сувениры, бонбоньерки, печать",
+      "followGuests": true
+    }
+  ],
+  "offers": [],
+  "checklist": [
+    {
+      "id": "ck6",
+      "category": "Площадка",
+      "title": "Аренда входит в банкет или оплачивается отдельно?",
+      "priority": "Высокая",
+      "answer": "",
+      "status": "Не проверено",
+      "note": ""
+    },
+    {
+      "id": "ck7",
+      "category": "Площадка",
+      "title": "Есть минимальный чек, сервисный и пробковый сбор?",
+      "priority": "Высокая",
+      "answer": "",
+      "status": "Не проверено",
+      "note": ""
+    },
+    {
+      "id": "ck8",
+      "category": "Площадка",
+      "title": "Входит ли обслуживание, уборка, мебель, текстиль?",
+      "priority": "Высокая",
+      "answer": "",
+      "status": "Не проверено",
+      "note": ""
+    },
+    {
+      "id": "ck9",
+      "category": "Площадка",
+      "title": "Есть ли доплата за позднее окончание и электричество?",
+      "priority": "Высокая",
+      "answer": "",
+      "status": "Не проверено",
+      "note": ""
+    },
+    {
+      "id": "ck10",
+      "category": "Площадка",
+      "title": "Можно ли свой алкоголь, торт, декор и подрядчиков?",
+      "priority": "Высокая",
+      "answer": "",
+      "status": "Не проверено",
+      "note": ""
+    },
+    {
+      "id": "ck11",
+      "category": "Банкет",
+      "title": "Фиксированное количество гостей, детское меню, изменения за N дней?",
+      "priority": "Высокая",
+      "answer": "",
+      "status": "Не проверено",
+      "note": ""
+    },
+    {
+      "id": "ck12",
+      "category": "Банкет",
+      "title": "Кто отвечает за безалкогольные напитки и лёд?",
+      "priority": "Средняя",
+      "answer": "",
+      "status": "Не проверено",
+      "note": ""
+    },
+    {
+      "id": "ck13",
+      "category": "Фото и видео",
+      "title": "Сколько часов съёмки и сколько стоит продление?",
+      "priority": "Высокая",
+      "answer": "",
+      "status": "Не проверено",
+      "note": ""
+    },
+    {
+      "id": "ck14",
+      "category": "Фото и видео",
+      "title": "Есть ли дорога, питание, проживание и срок сдачи в КП?",
+      "priority": "Высокая",
+      "answer": "",
+      "status": "Не проверено",
+      "note": ""
+    },
+    {
+      "id": "ck15",
+      "category": "Ведущий",
+      "title": "DJ, колонки, микрофоны, свет включены в стоимость?",
+      "priority": "Высокая",
+      "answer": "",
+      "status": "Не проверено",
+      "note": ""
+    },
+    {
+      "id": "ck16",
+      "category": "Оформление",
+      "title": "Монтаж/демонтаж и вывоз декора оплачиваются отдельно?",
+      "priority": "Средняя",
+      "answer": "",
+      "status": "Не проверено",
+      "note": ""
+    },
+    {
+      "id": "ck17",
+      "category": "Образы",
+      "title": "В платье включена подгонка и чистка?",
+      "priority": "Средняя",
+      "answer": "",
+      "status": "Не проверено",
+      "note": ""
+    },
+    {
+      "id": "ck18",
+      "category": "Подготовка",
+      "title": "Причёска, пробный макияж и ранний выезд включены?",
+      "priority": "Средняя",
+      "answer": "",
+      "status": "Не проверено",
+      "note": ""
+    },
+    {
+      "id": "ck19",
+      "category": "Москва",
+      "title": "Сколько ночей в гостинице нужно на самом деле?",
+      "priority": "Средняя",
+      "answer": "",
+      "status": "Не проверено",
+      "note": ""
+    },
+    {
+      "id": "ck20",
+      "category": "Логистика",
+      "title": "Нужен ли трансфер из Москвы / такси после банкета?",
+      "priority": "Высокая",
+      "answer": "",
+      "status": "Не проверено",
+      "note": ""
+    },
+    {
+      "id": "ck21",
+      "category": "Организация",
+      "title": "Кто встречает подрядчиков, контролирует тайминг и оплаты?",
+      "priority": "Средняя",
+      "answer": "",
+      "status": "Не проверено",
+      "note": ""
+    },
+    {
+      "id": "ck22",
+      "category": "Все расходы",
+      "title": "Какие авансы невозвратные и что при переносе даты?",
+      "priority": "Высокая",
+      "answer": "",
+      "status": "Не проверено",
+      "note": ""
+    },
+    {
+      "id": "ck23",
+      "category": "Все расходы",
+      "title": "Какие условия доплат и есть ли повышение цен до даты свадьбы?",
+      "priority": "Высокая",
+      "answer": "",
+      "status": "Не проверено",
+      "note": ""
+    }
+  ]
+};
+const STORAGE='wedding_ignat_lera_shared_backup_v1';
+const CATEGORIES=['Образы','Москва','Фото и видео','Площадка и еда','Оформление','Развлечения','Подготовка','Логистика','Организация','Другое'];
+const EMOJI={'Образы':'💍','Москва':'🏙️','Фото и видео':'📸','Площадка и еда':'🥂','Оформление':'💐','Развлечения':'🎵','Подготовка':'✨','Логистика':'🚗','Организация':'🗓️','Другое':'🧾'};
+const SCENARIOS=['Мой план','Эконом','В бюджет','База','Комфорт'];
+const OFFER_STATUSES=['Ищем','Рассматриваем','Выбрано','Отказались'];
+let state=readSaved(),tab='overview',search='',filter='all';
+function readSaved(){try{const raw=localStorage.getItem(STORAGE);if(raw){const o=JSON.parse(raw);if(o && Array.isArray(o.expenses) && Array.isArray(o.checklist)){return {...structuredClone(INITIAL),...o,scenario:o.scenario||'Мой план'}}}}catch(e){}return {...structuredClone(INITIAL),scenario:'Мой план'}}
+function persist(){try{localStorage.setItem(STORAGE,JSON.stringify(state));scheduleSharedSave();return true}catch(e){scheduleSharedSave();toast('Не удалось сохранить локальную резервную копию');return false}}
+function esc(v){return String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function rub(v){return Math.round(Number(v)||0).toLocaleString('ru-RU')+' ₽'}
+function n(v){return Math.max(0,Number(v)||0)}
+function num(v){return Number.isFinite(Number(v))?Number(v):0}
+function maybeNum(v){return v===''||v==null?null:Math.max(0,Number(v)||0)}
+function selectedPrice(e,mode){const s=mode==='Мой план'?(e.choice||'В бюджет'):mode;return s==='Своя'?n(e.custom):n(e.prices[s])}
+function subtotal(e,mode){return e.enabled?n(e.qty)*selectedPrice(e,mode):0}
+function calc(mode=state.scenario){let base=0,paid=0,debt=0;const byCat={};for(const e of state.expenses){if(!e.enabled)continue;const amount=subtotal(e,mode);base+=amount;const actual=(mode==='Мой план'&&e.actual!=null)?n(e.actual):amount;paid+=n(e.paid);debt+=Math.max(0,actual-n(e.paid));byCat[e.category]=(byCat[e.category]||0)+amount;}const reserve=base*n(state.reserve)/100;return {base,reserve,total:base+reserve,paid,debt,byCat,left:n(state.budget)-(base+reserve)}}
+function icon(name){const paths={home:'<path d="m3 10 9-7 9 7v10H3z"/><path d="M9 20v-7h6v7"/>',list:'<path d="M8 6h13M8 12h13M8 18h13"/><path d="M3 6h.01M3 12h.01M3 18h.01"/>',tag:'<path d="M20.6 13.4 13.4 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.8Z"/><circle cx="7.5" cy="7.5" r=".8"/>',check:'<path d="M20 6 9 17l-5-5"/><circle cx="12" cy="12" r="10"/>',settings:'<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.8 1.8 0 0 0 .35 2l-1.7 1.7a1.8 1.8 0 0 0-2-.35l-.75.3a1.8 1.8 0 0 0-1.15 1.7H9.85a1.8 1.8 0 0 0-1.15-1.7L8 18.35a1.8 1.8 0 0 0-2 .35L4.3 17a1.8 1.8 0 0 0 .35-2l-.3-.75A1.8 1.8 0 0 0 2.65 13V11a1.8 1.8 0 0 0 1.7-1.15l.3-.75a1.8 1.8 0 0 0-.35-2L6 5.4a1.8 1.8 0 0 0 2 .35l.75-.3A1.8 1.8 0 0 0 9.85 3.75h4.3a1.8 1.8 0 0 0 1.15 1.7l.75.3a1.8 1.8 0 0 0 2-.35L19.7 7.1a1.8 1.8 0 0 0-.35 2l.3.75A1.8 1.8 0 0 0 21.35 11v2a1.8 1.8 0 0 0-1.7 1.15z"/>',plus:'<path d="M12 5v14M5 12h14"/>',download:'<path d="M12 3v12m-4-4 4 4 4-4M4 17v4h16v-4"/>',upload:'<path d="M12 17V5m-4 4 4-4 4 4M4 17v4h16v-4"/>',edit:'<path d="M12 20h9M15 5l4 4M3 17.5V21h3.5L20 7.5 16.5 4 3 17.5Z"/>'};return `<svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" viewBox="0 0 24 24">${paths[name]||paths.list}</svg>`}
+function nav(){const items=[['overview','Обзор','home'],['expenses','Расходы','list'],['offers','Варианты','tag'],['checklist','Проверки','check']];return `<nav class="bottom-nav" aria-label="Основные разделы"><div class="nav-inner">${items.map(([id,t,i])=>`<button class="nav-item ${tab===id?'active':''}" data-action="nav" data-tab="${id}" aria-current="${tab===id?'page':'false'}">${icon(i)}<span>${t}</span></button>`).join('')}</div></nav>`}
+function header(){return `<header class="topbar"><div class="brand"><div class="brandmark">I♥L</div><div><b>Наша свадьба</b><small>Игнат & Лера · ${Math.round(state.guests)} гостей</small></div></div><button class="iconbtn" title="Настройки и резервная копия" aria-label="Настройки" data-action="settings">${icon('settings')}</button></header>`}
+function chips(){return `<div class="scenario-panel"><div class="scroller" role="group" aria-label="Сценарий расчёта">${SCENARIOS.map(s=>`<button class="chip ${state.scenario===s?'active':''}" data-action="scenario" data-value="${esc(s)}">${esc(s)}</button>`).join('')}</div><p class="note">${state.scenario==='Мой план'?'Мой план учитывает выбранную цену каждой статьи, предоплаты и фактические суммы.':'Это предварительное сравнение типовых цен. Правки статей сохраняются в «Мой план». Всё без подтверждённых прайс-листов.'}</p></div>`}
+function overview(){const c=calc(),used=Math.min(100,Math.max(0,c.total/n(state.budget)*100)),entries=Object.entries(c.byCat).filter(x=>x[1]>0).sort((a,b)=>b[1]-a[1]);const top=state.expenses.filter(e=>e.enabled).map(e=>[e,subtotal(e,state.scenario)]).sort((a,b)=>b[1]-a[1]).slice(0,5);const scenarios=SCENARIOS.slice(1).map(s=>({name:s,amount:calc(s).total}));return `<div class="heading"><div><div class="eyebrow">Планируем без сюрпризов</div><h1>Наш бюджет</h1></div></div><div class="content-grid"><div><section class="hero"><div class="hero-label">Прогноз свадьбы с резервом · ${esc(state.scenario)}</div><div class="hero-amount">${rub(c.total)}</div><div class="hero-under">${c.left>=0?`Остаётся в лимите ${rub(c.left)}`:`Превышение бюджета на ${rub(-c.left)}`}</div><div class="hero-progress ${c.left<0?'over':''}"><div style="width:${used}%"></div></div><div class="hero-meta"><span>Заложенный бюджет</span><strong>${rub(state.budget)}</strong></div></section>${chips()}<div class="stat-grid"><div class="stat"><div class="stat-label">Расходы до резерва</div><div class="stat-num">${rub(c.base)}</div><div class="stat-sub">${state.expenses.filter(e=>e.enabled).length} активных статей</div></div><div class="stat"><div class="stat-label">Резерв (${n(state.reserve)}%)</div><div class="stat-num">${rub(c.reserve)}</div><div class="stat-sub">На непредвиденное</div></div><div class="stat"><div class="stat-label">Уже оплачено</div><div class="stat-num positive">${rub(calc('Мой план').paid)}</div><div class="stat-sub">Сумма внесённых оплат</div></div><div class="stat"><div class="stat-label">К оплате по статьям</div><div class="stat-num">${rub(calc('Мой план').debt)}</div><div class="stat-sub">Без неиспользованного резерва</div></div></div><div class="hint-card"><span style="font-size:23px">💡</span><div><b>Цены пока ориентировочные.</b> Когда подрядчик пришлёт предложение, добавь его во вкладке «Варианты» и перенеси стоимость в смету одной кнопкой.</div></div></div><div><div class="spaced"><h2 class="section-title">По категориям</h2><button class="btn border sm" data-action="params">Изменить лимит</button></div><div class="card category-bars">${entries.map(([k,v])=>`<div><div class="bar-title"><span>${EMOJI[k]||'🧾'} ${esc(k)}</span><b>${rub(v)}</b></div><div class="track"><div style="width:${Math.min(100,c.base?100*v/c.base:0)}%;background:${({'Площадка и еда':'#916a86','Образы':'#be8e8b','Фото и видео':'#a48dba','Развлечения':'#dfae93','Москва':'#8f9cad','Оформление':'#9ab3a1','Логистика':'#b4a4a7','Подготовка':'#d6a7ab','Организация':'#bfbaa7'})[k]||'#9c7992'}"></div></div></div>`).join('')||'<span class="muted">Нет включённых расходов</span>'}</div><h2 class="section-title">Самые крупные расходы</h2><div class="card topitems">${top.map(([e,v])=>`<button class="topitem" data-action="edit-expense" data-id="${esc(e.id)}"><span><strong>${esc(e.title)}</strong><small>${esc(e.category)}</small></span><span class="val">${rub(v)}</span></button>`).join('')}</div><h2 class="section-title">Сравнение сценариев</h2><div class="card category-bars">${scenarios.map(s=>`<div><div class="bar-title"><span>${esc(s.name)}</span><b class="${s.amount>state.budget?'negative':'positive'}">${rub(s.amount)}</b></div><div class="track"><div style="width:${Math.min(100,s.amount/Math.max(...scenarios.map(x=>x.amount),1)*100)}%"></div></div></div>`).join('')}</div></div></div>`}
+function expRow(e){const mode=state.scenario;const sum=subtotal(e,mode);const unit=selectedPrice(e,mode);const hasPaid=n(e.paid)>0;return `<div class="expense-entry ${e.enabled?'':'disabled'}"><button data-action="edit-expense" data-id="${esc(e.id)}" aria-label="Открыть ${esc(e.title)}"><div class="entry-main"><div class="entry-title">${esc(e.title)}</div><div class="entry-sub">${e.enabled?(n(e.qty)!==1?`${n(e.qty)} × ${rub(unit)} · `:'')+esc(e.city):'Не учитываем в смете'}</div></div><div style="text-align:right"><div class="entry-price">${rub(sum)}</div><div class="entry-status">${hasPaid?`Оплачено ${rub(e.paid)}`:mode==='Мой план'?esc(e.choice):'Предпросмотр'}</div></div><span class="entry-arrow">›</span></button></div>`}
+function groups(){const list=state.expenses.filter(e=>{const matches=!search||(e.title+' '+e.category+' '+e.city).toLowerCase().includes(search.toLowerCase());return matches && (filter==='all'||(filter==='included'&&e.enabled)||(filter==='notincluded'&&!e.enabled)||(filter==='paid'&&n(e.paid)>0))});return CATEGORIES.filter(cat=>list.some(e=>e.category===cat)).map(cat=>{const es=list.filter(e=>e.category===cat);return `<details class="category-group" open><summary><div class="category-symbol">${EMOJI[cat]||'🧾'}</div><div class="category-name"><b>${esc(cat)}</b><small>${es.length} статей</small></div><div class="category-amount">${rub(es.reduce((sum,e)=>sum+subtotal(e,state.scenario),0))}</div><div class="chevron">›</div></summary>${es.map(expRow).join('')}</details>`}).join('')||'<div class="empty"><div class="empty-icon">🔎</div><h3>Ничего не найдено</h3><p>Попробуй другой запрос или фильтр.</p></div>'}
+function expenses(){const c=calc();return `<div class="heading"><div><div class="eyebrow">29 исходных статей, можно добавлять свои</div><h1>Расходы</h1><p>Нажми на статью, чтобы изменить цену, оплату или количество.</p></div><button class="iconbtn" data-action="add-expense" aria-label="Добавить статью">${icon('plus')}</button></div><div class="micro-summary"><span>Всего с резервом · ${esc(state.scenario)}</span><b>${rub(c.total)}</b></div><div class="search"><span class="search-icon">⌕</span><input id="search-input" type="search" autocomplete="off" placeholder="Найти расход" value="${esc(search)}" aria-label="Поиск расходов"></div><div class="scroller" style="padding-bottom:3px"><button class="chip ${filter==='all'?'active':''}" data-action="filter" data-value="all">Все</button><button class="chip ${filter==='included'?'active':''}" data-action="filter" data-value="included">Учитываем</button><button class="chip ${filter==='paid'?'active':''}" data-action="filter" data-value="paid">С оплатами</button><button class="chip ${filter==='notincluded'?'active':''}" data-action="filter" data-value="notincluded">Не учитываем</button></div><div id="expense-list">${groups()}</div><button class="fab" data-action="add-expense">+ Добавить статью</button>`}
+function safeContact(value){const v=String(value||'').trim();if(/^https:\/\//i.test(v)||/^http:\/\//i.test(v))return `<a href="${esc(v)}" target="_blank" rel="noopener noreferrer">Открыть предложение ↗</a>`;return esc(v)}
+function offerTag(s){return `<span class="pill ${s==='Выбрано'?'green':s==='Отказались'?'gray':''}">${esc(s)}</span>`}
+function offers(){return `<div class="heading"><div><div class="eyebrow">Предложения от подрядчиков</div><h1>Варианты</h1><p>Сравни цены и условия. Выбранный вариант можно сразу перенести в смету.</p></div><button class="iconbtn" data-action="add-offer" aria-label="Добавить вариант">${icon('plus')}</button></div><div class="micro-summary"><span>Сохранено предложений</span><b>${state.offers.length}</b></div>${state.offers.length?state.offers.map(o=>{const ex=state.expenses.find(e=>e.id===o.expenseId);return `<div class="card offer-entry"><div class="offer-head"><div><b>${esc(o.name||'Подрядчик')}</b><div style="margin-top:5px"><span>${esc(ex?.title||'Статья удалена')}</span></div></div>${offerTag(o.status)}</div><div class="offer-cost">${rub(o.total)}</div>${o.includes?`<div class="offer-info">Входит: ${esc(o.includes)}</div>`:''}${o.extra?`<div class="offer-info">Доплаты: ${esc(o.extra)}</div>`:''}<div class="offer-info">${o.deposit?`Аванс по условиям: ${rub(o.deposit)} · `:''}${esc(o.note||'')}</div>${o.contact?`<div class="offer-info" style="margin-top:7px">Контакт: ${safeContact(o.contact)}</div>`:''}<div class="offer-actions"><button class="btn secondary sm" data-action="edit-offer" data-id="${esc(o.id)}">Изменить</button><button class="btn sm" data-action="apply-offer" data-id="${esc(o.id)}" ${ex?'':'disabled'}>В смету</button></div></div>`}).join(''):`<div class="empty"><div class="empty-icon">📝</div><h3>Пока нет вариантов</h3><p>Например, добавь две площадки: название, полную цену, что входит, дополнительные сборы и контакт.</p><button class="btn" data-action="add-offer">+ Добавить предложение</button></div>`}<div class="hint-card"><span style="font-size:22px">📌</span><div>Применение предложения обновит <b>свою цену</b> выбранной статьи. Указанный аванс из предложения не будет считаться оплаченным, пока ты не внесёшь фактический платёж в «Расходах».</div></div>`}
+function checklist(){const complete=state.checklist.filter(x=>x.status==='Проверено').length;const pct=100*complete/(state.checklist.length||1);return `<div class="heading"><div><div class="eyebrow">Важные условия и скрытые доплаты</div><h1>Что проверить</h1><p>Неочевидные вопросы до подписания договоров.</p></div></div><div class="check-progress"><div class="spaced"><b>${complete} из ${state.checklist.length} проверено</b><b class="positive">${Math.round(pct)}%</b></div><div class="track" style="height:10px;margin-top:11px"><div style="width:${pct}%;background:#488c75"></div></div></div><div class="card" style="margin-top:12px">${state.checklist.map(c=>`<div class="checklist-entry"><button class="check-toggle ${c.status==='Проверено'?'checked':''}" aria-label="${c.status==='Проверено'?'Отменить проверку':'Отметить проверенным'}" data-action="toggle-check" data-id="${esc(c.id)}">${c.status==='Проверено'?'✓':''}</button><div class="check-content"><div class="check-question ${c.status==='Проверено'?'done':''}">${esc(c.title)}</div><div class="check-meta">${esc(c.category)} · ${esc(c.priority)}${c.answer?' · есть ответ':''}</div></div><button class="iconbtn" style="width:34px;height:34px;flex:0 0 34px" data-action="edit-check" data-id="${esc(c.id)}" aria-label="Записать ответ">${icon('edit')}</button></div>`).join('')}</div>`}
+function render(){document.getElementById('app').innerHTML=header()+(tab==='overview'?overview():tab==='expenses'?expenses():tab==='offers'?offers():checklist())+nav()}
+function toast(s){const el=document.getElementById('toast-root');el.innerHTML=`<div class="toast" role="status">${esc(s)}</div>`;clearTimeout(toast.timer);toast.timer=setTimeout(()=>el.innerHTML='',2700)}
+function sheet(title,body){document.getElementById('modal-root').innerHTML=`<div class="overlay" data-action="overlay"><div class="sheet" role="dialog" aria-modal="true" aria-label="${esc(title)}"><div class="sheet-top"><div class="handle"></div><div class="sheet-heading"><h2>${esc(title)}</h2><button type="button" data-action="close" aria-label="Закрыть">×</button></div></div>${body}</div></div>`;document.body.style.overflow='hidden'}
+function closeSheet(){document.getElementById('modal-root').innerHTML='';document.body.style.overflow=''}
+function field(label,name,value,type='text',placeholder='',extra=''){return `<div class="field"><label for="f-${esc(name)}">${esc(label)}</label><input id="f-${esc(name)}" name="${esc(name)}" type="${type}" ${type==='number'?'min="0" step="any" inputmode="decimal"':''} value="${esc(value??'')}" placeholder="${esc(placeholder)}" ${extra}></div>`}
+function choose(options,selected){return options.map(i=>`<option value="${esc(i)}" ${selected===i?'selected':''}>${esc(i)}</option>`).join('')}
+function editExpense(id){const e=state.expenses.find(x=>x.id===id);if(!e)return;sheet(e.title,`<form id="expense-form" data-id="${esc(id)}"><div class="sheet-caption">${esc(e.city)} · ${esc(e.category)}. ${state.scenario!=='Мой план'?'Сейчас открыт сценарий «'+esc(state.scenario)+'», а изменения вносятся в «Мой план».':'Настрой цену и отмечай реальные платежи.'}</div><div class="fields2"><div class="field"><label>Категория</label><select name="category">${choose(CATEGORIES,e.category)}</select></div>${field('Город','city',e.city)}</div><div class="switch-line"><div><b>Учитывать в смете</b><small>Можно выключить, если услуга не нужна</small></div><label class="switch"><input name="enabled" type="checkbox" ${e.enabled?'checked':''}><span></span></label></div><div class="fields2"><div class="field"><label>Вариант цены</label><select name="choice" id="exp-choice">${choose(['Эконом','В бюджет','База','Комфорт','Своя'],e.choice)}</select></div>${field('Своя цена за единицу, ₽','custom',e.custom,'number','Например, 42000')}</div><p class="note">При вводе своей цены автоматически выбирается вариант «Своя».</p><div class="fields2">${field('Количество','qty',e.qty,'number')}${field('Единица измерения','unit',e.unit)}</div><div class="switch-line"><div><b>Количество = гостей (${n(state.guests)})</b><small>Для банкета, напитков, торта, подарков</small></div><label class="switch"><input name="followGuests" type="checkbox" ${e.followGuests?'checked':''}><span></span></label></div><div class="sheet-caption" id="expense-preview">По выбранной цене: ${rub(subtotal(e,'Мой план'))}</div><div class="inline-caption">Реальные расходы</div><div class="fields2">${field('Уже внесено, ₽','paid',e.paid,'number')}${field('Факт итог, ₽','actual',e.actual,'number','Пока неизвестно')}</div><p class="note">Если итоговая сумма уже известна, укажи её в «Факт итог». Если нет, остаток к оплате рассчитывается по плану.</p><div class="field"><label>Комментарий / условия</label><textarea name="note" rows="3">${esc(e.note)}</textarea></div><div class="sheet-actions"><button class="btn full" type="submit">Сохранить изменения</button></div><div class="del-line"><button type="button" data-action="delete-expense" data-id="${esc(e.id)}">Удалить статью</button></div></form>`)}
+function addExpense(){const id='custom'+Date.now();const e={id,category:'Другое',title:'Новая статья',city:'Переславль',unit:'услуга',qty:1,prices:{'Эконом':0,'В бюджет':0,'База':0,'Комфорт':0},choice:'Своя',custom:0,enabled:true,paid:0,actual:null,note:'',followGuests:false};sheet('Новая статья расходов',`<form id="new-expense-form"><div class="field"><label>Название</label><input name="title" required maxlength="120" placeholder="Например, фейерверк"></div><div class="field"><label>Категория</label><select name="category">${choose(CATEGORIES,'Другое')}</select></div><div class="fields2">${field('Цена за единицу, ₽','custom',0,'number')}${field('Количество','qty',1,'number')}</div><div class="fields2">${field('Единица','unit','услуга')}${field('Город','city','Переславль')}</div><div class="sheet-actions"><button type="submit" class="btn full">Добавить в смету</button></div></form>`)}
+function editOffer(id){const o=id?state.offers.find(x=>x.id===id):null;const exp=o?.expenseId||state.expenses[0]?.id;sheet(o?'Изменить предложение':'Новое предложение',`<form id="offer-form" data-id="${esc(id||'')}" ><div class="field"><label>Статья расходов</label><select name="expenseId">${state.expenses.map(e=>`<option value="${esc(e.id)}" ${exp===e.id?'selected':''}>${esc(e.title)}</option>`).join('')}</select></div>${field('Подрядчик / площадка','name',o?.name||'','text','Название или имя','required')}<div class="fields2">${field('Полная цена, ₽','total',o?.total||0,'number')}${field('Аванс по условиям, ₽','deposit',o?.deposit||0,'number')}</div><div class="field"><label>Статус</label><select name="status">${choose(OFFER_STATUSES,o?.status||'Рассматриваем')}</select></div><div class="field"><label>Что входит</label><textarea name="includes" rows="2" placeholder="Банкет, аренда, обслуживание...">${esc(o?.includes||'')}</textarea></div><div class="field"><label>Доплаты / ограничения</label><textarea name="extra" rows="2" placeholder="Пробковый сбор, выезд, часы...">${esc(o?.extra||'')}</textarea></div>${field('Ссылка или контакт','contact',o?.contact||'','text','https://... или телефон')}<div class="field"><label>Комментарий</label><textarea name="note" rows="2">${esc(o?.note||'')}</textarea></div><div class="sheet-actions"><button class="btn full" type="submit">Сохранить предложение</button></div>${o?`<div class="del-line"><button type="button" data-action="delete-offer" data-id="${esc(o.id)}">Удалить предложение</button></div>`:''}</form>`)}
+function editCheck(id){const c=state.checklist.find(x=>x.id===id);if(!c)return;sheet('Условие договора',`<form id="check-form" data-id="${esc(id)}"><div class="sheet-caption">${esc(c.title)}</div><div class="field"><label>Статус</label><select name="status">${choose(['Не проверено','В процессе','Проверено'],c.status)}</select></div><div class="field"><label>Что выяснили</label><textarea name="answer" rows="4" placeholder="Например, обслуживание включено в банкет">${esc(c.answer)}</textarea></div><div class="field"><label>Дополнительный комментарий</label><textarea name="note" rows="2">${esc(c.note)}</textarea></div><div class="sheet-actions"><button class="btn full" type="submit">Сохранить</button></div></form>`)}
+function params(){sheet('Параметры свадьбы',`<form id="params-form"><div class="sheet-caption">Общий бюджет, количество гостей и резерв обновляют всю смету. Статьи с пометкой «по числу гостей» пересчитываются автоматически.</div>${field('Лимит свадьбы, ₽','budget',state.budget,'number')}<div class="fields2">${field('Количество гостей','guests',state.guests,'number')}${field('Резерв, %','reserve',state.reserve,'number')}</div><div class="sheet-actions"><button class="btn full" type="submit">Пересчитать бюджет</button></div></form>`)}
+function settings(){sheet('Данные и настройки',`<div class="sheet-caption">Это общая смета. После входа по личному ключу все изменения отправляются в Google Sheets. На другом телефоне они появятся автоматически. При конфликте версий сначала скачай резервную копию JSON.</div><div class="inline-caption">Параметры</div><div class="config-list"><button class="btn secondary full" data-action="params">${icon('settings')} Изменить бюджет, гостей и резерв</button></div><div class="inline-caption">Резервная копия и Excel</div><div class="config-list"><button class="btn border full" data-action="export-json">${icon('download')} Скачать полную копию (.json)</button><button class="btn border full" data-action="import-json">${icon('upload')} Восстановить из копии (.json)</button><button class="btn border full" data-action="export-csv">${icon('download')} Экспорт сметы в Excel (.csv)</button></div><p class="note" style="margin-top:16px">JSON сохраняет и цены, и подрядчиков, и проверки. CSV предназначен для просмотра сметы в Excel, но не содержит всей внутренней логики приложения.</p><div class="inline-caption">Установка</div><div class="hint-card" style="margin:6px 0"><span style="font-size:24px">📱</span><div><b>На iPhone:</b> после размещения этой папки на HTTPS-сайте открой ссылку в Safari, нажми «Поделиться» → «На экран Домой». Для надёжного хранения на телефоне лучше пользоваться этой версией, а не открывать HTML из «Файлов».</div></div><input style="display:none" id="json-input" type="file" accept=".json,application/json"></div>`)}
+function download(name,contents,mime){const blob=new Blob([contents],{type:mime});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download=name;document.body.appendChild(a);a.click();a.remove();setTimeout(()=>URL.revokeObjectURL(url),10000)}
+function exportJson(){download('Свадьба_Игнат_Лера_копия.json',JSON.stringify({app:'wedding-mobile',version:1,savedAt:new Date().toISOString(),state},null,2),'application/json;charset=utf-8');toast('Резервная копия подготовлена')}
+function csvCell(x){return '"'+String(x??'').replace(/"/g,'""')+'"'}
+function exportCsv(){const cols=['Категория','Статья','Город','Включено','Количество','Единица','Выбор цены','Цена за единицу','План','Оплачено','Факт итог','К оплате','Комментарий'];const rows=[['Свадьба Игнат и Лера'],['Лимит',state.budget,'Гостей',state.guests,'Резерв %',state.reserve],[],cols];for(const e of state.expenses){const plan=subtotal(e,'Мой план');rows.push([e.category,e.title,e.city,e.enabled?'Да':'Нет',e.qty,e.unit,e.choice,selectedPrice(e,'Мой план'),plan,e.paid,e.actual==null?'':e.actual,e.enabled?Math.max(0,(e.actual==null?plan:n(e.actual))-n(e.paid)):0,e.note])}const c=calc('Мой план');rows.push([],['Итого до резерва',c.base],['Резерв',c.reserve],['ИТОГО',c.total],['Оплачено',c.paid],['К оплате без резерва',c.debt]);download('Свадебная_смета_мобильная.csv','\ufeff'+rows.map(r=>r.map(csvCell).join(';')).join('\r\n'),'text/csv;charset=utf-8');toast('CSV для Excel подготовлен')}
+function applyOffer(id){const o=state.offers.find(x=>x.id===id);const e=state.expenses.find(x=>x.id===o?.expenseId);if(!o||!e)return;const amount=n(o.total);if(!confirm(`Применить предложение «${o.name}» за ${rub(amount)} к статье «${e.title}»?`))return;if(!n(e.qty)){e.qty=1;e.followGuests=false}e.custom=amount/n(e.qty);e.choice='Своя';e.enabled=true;o.status='Выбрано';persist();render();toast('Цена перенесена в «Мой план»')}
+function readForm(form){return Object.fromEntries(new FormData(form).entries())}
+function handleSubmit(event){const form=event.target;if(!form.id||!['expense-form','new-expense-form','offer-form','check-form','params-form'].includes(form.id))return;event.preventDefault();const d=readForm(form);if(form.id==='expense-form'){const e=state.expenses.find(x=>x.id===form.dataset.id);if(!e)return;e.enabled=!!form.elements.enabled.checked;e.choice=d.choice;e.custom=maybeNum(d.custom);e.qty=n(d.qty);e.unit=d.unit||'услуга';e.category=d.category||'Другое';e.city=d.city||'';e.followGuests=!!form.elements.followGuests.checked;if(e.followGuests)e.qty=n(state.guests);e.paid=n(d.paid);e.actual=maybeNum(d.actual);e.note=d.note||''}else if(form.id==='new-expense-form'){const title=(d.title||'').trim();if(!title)return;state.expenses.push({id:'ex'+Date.now(),category:d.category||'Другое',title,city:d.city||'',unit:d.unit||'услуга',qty:n(d.qty),prices:{'Эконом':0,'В бюджет':0,'База':0,'Комфорт':0},choice:'Своя',custom:n(d.custom),enabled:true,paid:0,actual:null,note:'',followGuests:false})}else if(form.id==='offer-form'){let o=state.offers.find(x=>x.id===form.dataset.id);if(!o){o={id:'of'+Date.now()};state.offers.push(o)}Object.assign(o,{expenseId:d.expenseId,name:(d.name||'').trim(),total:n(d.total),deposit:n(d.deposit),status:d.status,includes:d.includes||'',extra:d.extra||'',contact:d.contact||'',note:d.note||''})}else if(form.id==='check-form'){const c=state.checklist.find(x=>x.id===form.dataset.id);if(!c)return;c.status=d.status;c.answer=d.answer||'';c.note=d.note||''}else if(form.id==='params-form'){state.budget=n(d.budget);state.guests=n(d.guests);state.reserve=n(d.reserve);for(const e of state.expenses)if(e.followGuests)e.qty=n(state.guests)}persist();closeSheet();render();toast('Сохранено')}
+function handleClick(event){const trigger=event.target.closest('[data-action]');if(!trigger)return;const action=trigger.dataset.action;const id=trigger.dataset.id;if(action==='overlay'){if(event.target===trigger)closeSheet();return}if(action==='close'){closeSheet();return}if(action==='nav'){tab=trigger.dataset.tab;search='';filter='all';render();window.scrollTo({top:0,behavior:'instant'});return}if(action==='scenario'){state.scenario=trigger.dataset.value;persist();render();return}if(action==='filter'){filter=trigger.dataset.value;render();return}if(action==='settings'){settings();return}if(action==='params'){params();return}if(action==='edit-expense'){editExpense(id);return}if(action==='add-expense'){addExpense();return}if(action==='edit-offer'){editOffer(id);return}if(action==='add-offer'){editOffer(null);return}if(action==='edit-check'){editCheck(id);return}if(action==='toggle-check'){const c=state.checklist.find(x=>x.id===id);if(c){c.status=c.status==='Проверено'?'Не проверено':'Проверено';persist();render()}return}if(action==='apply-offer'){applyOffer(id);return}if(action==='delete-expense'){const e=state.expenses.find(x=>x.id===id);if(!e||!confirm(`Удалить статью «${e.title}»?`))return;state.expenses=state.expenses.filter(x=>x.id!==id);persist();closeSheet();render();toast('Статья удалена');return}if(action==='delete-offer'){if(!confirm('Удалить предложение?'))return;state.offers=state.offers.filter(x=>x.id!==id);persist();closeSheet();render();return}if(action==='export-json'){exportJson();return}if(action==='export-csv'){exportCsv();return}if(action==='import-json'){const input=document.getElementById('json-input');if(input)input.click();return}}
+document.addEventListener('submit',handleSubmit);
+document.addEventListener('click',handleClick);
+document.addEventListener('input',e=>{if(e.target?.id==='search-input'){search=e.target.value;document.getElementById('expense-list').innerHTML=groups()}if(e.target.closest('#expense-form')){const form=e.target.closest('#expense-form');if(e.target.name==='custom'){form.elements.choice.value='Своя'}const el=form.querySelector('#expense-preview');const ex=state.expenses.find(x=>x.id===form.dataset.id);if(!el||!ex)return;const d=readForm(form);const v=d.choice==='Своя'?n(d.custom):n(ex.prices[d.choice]);const q=form.elements.followGuests.checked?n(state.guests):n(d.qty);el.textContent='По выбранной цене: '+rub(v*q)}});
+document.addEventListener('change',async e=>{if(e.target?.id==='json-input'){const file=e.target.files?.[0];if(!file)return;try{const content=JSON.parse(await file.text());const s=content.state||content;if(!Array.isArray(s.expenses)||!Array.isArray(s.checklist)||!Array.isArray(s.offers))throw new Error('Неправильный формат');if(!confirm('Восстановить копию? Текущие данные на этом устройстве будут заменены.'))return;state={...structuredClone(INITIAL),...s};persist();closeSheet();render();toast('Копия восстановлена')}catch(error){alert('Не удалось прочитать копию: '+error.message)}}});
+document.addEventListener('keydown',e=>{if(e.key==='Escape')closeSheet()});
+startShared();
+
+// Apps Script HTML Service client. Keys are never added to URLs, source code or spreadsheet cells.
+let sharedKey='',sharedAs='',sharedRev=0,sharedBusy=false,sharedDirty=false,sharedQueued=false,sharedBlocked=false;
+let sharedSaveTimer=null,sharedChecking=false,sharedLastEdit=0;
+function sharedStatus(message,warning=false){
+  const el=document.getElementById('shared-sync');
+  el.style.display='flex';el.classList.toggle('warn',warning);
+  document.getElementById('shared-sync-status').textContent=message;
+  document.getElementById('shared-backup').hidden=!warning;
+}
+function showLoginError(message){document.getElementById('login-error').textContent=message;}
+function startShared(){
+  if(!(window.google && google.script && google.script.run)){
+    showLoginError('Эту версию нужно открыть по ссылке Google Apps Script после развёртывания. Адрес GitHub Pages работает как локальный вариант.');
+    document.getElementById('shared-auth-submit').disabled=true;
+    return;
+  }
+  document.getElementById('shared-auth-form').addEventListener('submit',e=>{
+    e.preventDefault();const key=document.getElementById('shared-key-input').value.trim();
+    if(key.length<24)return showLoginError('Проверьте ключ. Он должен быть длиннее 24 символов.');
+    connectShared(key);
+  });
+  document.getElementById('shared-refresh').addEventListener('click',()=>refreshShared(true));
+  document.getElementById('shared-backup').addEventListener('click',exportJson);
+  const previous=sessionStorage.getItem('wedding_shared_access_key');
+  if(previous){document.getElementById('shared-key-input').value=previous;connectShared(previous)}
+  setInterval(()=>{if(sharedKey&&!sharedBusy&&!sharedDirty&&!sharedBlocked&&!sharedChecking&&!document.querySelector('.overlay'))refreshShared(false)},30000);
+}
+function connectShared(key){
+  const btn=document.getElementById('shared-auth-submit');btn.disabled=true;btn.textContent='Загружаем смету…';showLoginError('');
+  google.script.run.withSuccessHandler(r=>{
+    if(!r || !r.state || !Array.isArray(r.state.expenses)){
+      showLoginError('Сервер вернул некорректную смету');btn.disabled=false;btn.textContent='Открыть общую смету';return;
+    }
+    sharedKey=key;sharedAs=r.accessAs||'';sharedRev=r.version;sharedDirty=false;sharedQueued=false;sharedBlocked=false;
+    try{sessionStorage.setItem('wedding_shared_access_key',key)}catch(e){}
+    state={...structuredClone(INITIAL),...r.state};
+    try{localStorage.setItem(STORAGE,JSON.stringify(state))}catch(e){}
+    document.getElementById('shared-auth').hidden=true;
+    document.getElementById('app').style.display='';
+    render();sharedStatus('✓ Общая смета · '+sharedAs+' · синхронизировано');
+    document.getElementById('shared-key-input').value='';
+  }).withFailureHandler(err=>{
+    showLoginError(err?.message||'Не удалось подключиться. Проверьте ключ и соединение.');
+    btn.disabled=false;btn.textContent='Открыть общую смету';
+    try{sessionStorage.removeItem('wedding_shared_access_key')}catch(e){}
+  }).loadBudget(key);
+}
+function scheduleSharedSave(){
+  if(!sharedKey)return;
+  sharedDirty=true;sharedLastEdit=Date.now();
+  if(sharedBlocked){sharedStatus('⚠ Есть несохранённые изменения. Сначала разрешите конфликт.',true);return;}
+  sharedStatus('● Сохраняем изменения…');
+  if(sharedSaveTimer)clearTimeout(sharedSaveTimer);
+  sharedSaveTimer=setTimeout(pushShared,550);
+}
+function pushShared(){
+  if(!sharedKey||sharedBlocked||!sharedDirty)return;
+  if(sharedBusy){sharedQueued=true;return;}
+  sharedBusy=true;sharedDirty=false;sharedQueued=false;
+  const outgoing=structuredClone(state), version=sharedRev;
+  google.script.run.withSuccessHandler(r=>{
+    sharedBusy=false;sharedRev=r.version;
+    if(sharedDirty||sharedQueued){sharedDirty=true;sharedQueued=false;scheduleSharedSave();return;}
+    sharedStatus('✓ Общая смета · '+sharedAs+' · сохранено');
+  }).withFailureHandler(err=>{
+    sharedBusy=false;sharedDirty=true;sharedBlocked=true;
+    const conflict=String(err?.message||'').includes('VERSION_CONFLICT');
+    sharedStatus(conflict?'⚠ Кто-то изменил смету. Скачайте копию своих правок, затем обновите.':'⚠ Нет связи с сервером или ошибка записи. Скачайте копию и повторите.',true);
+  }).saveBudget(sharedKey,version,outgoing);
+}
+function refreshShared(manual){
+  if(!sharedKey||sharedChecking)return;
+  if(sharedBusy||sharedDirty||sharedBlocked){
+    if(!manual)return;
+    if(!confirm('Есть локальные изменения, которые не были сохранены в общей базе. Сначала скачайте резервную копию через кнопку рядом. Заменить их свежей версией из облака?'))return;
+  }
+  sharedChecking=true;
+  google.script.run.withSuccessHandler(r=>{
+    sharedChecking=false;
+    if(r.version!==sharedRev||sharedBlocked){
+      // An active edit sheet is intentionally never replaced during background polling.
+      if(document.querySelector('.overlay')&&!manual){sharedStatus('● Есть новые данные, завершите редактирование и нажмите «Обновить».',true);return;}
+      state={...structuredClone(INITIAL),...r.state};sharedRev=r.version;sharedBlocked=false;sharedDirty=false;sharedQueued=false;
+      try{localStorage.setItem(STORAGE,JSON.stringify(state))}catch(e){}
+      if(manual&&document.querySelector('.overlay'))closeSheet();
+      render();sharedStatus('✓ Получены изменения · '+(r.editor||'участник'));
+    }else sharedStatus('✓ Общая смета · актуальная версия');
+  }).withFailureHandler(err=>{
+    sharedChecking=false;sharedStatus('⚠ Не удалось обновить: '+String(err?.message||'ошибка сети').slice(0,110),true);
+  }).loadBudget(sharedKey);
+}
+
+window.__weddingTest={calc,selectedPrice,subtotal,getState:()=>state};
+</script>
+</body>
+</html>
