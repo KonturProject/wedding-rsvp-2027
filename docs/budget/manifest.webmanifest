@@ -1,0 +1,19 @@
+{
+  "name": "Наша свадьба · Игнат и Лера",
+  "short_name": "Наша свадьба",
+  "description": "Свадебная смета с ценами, сценариями и оплатами",
+  "lang": "ru",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "theme_color": "#342b3b",
+  "background_color": "#f8f6f2",
+  "icons": [
+    {
+      "src": "./icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}
