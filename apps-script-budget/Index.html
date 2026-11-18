@@ -923,7 +923,7 @@ function connectShared(key){
     state={...structuredClone(INITIAL),...r.state};
     try{localStorage.setItem(STORAGE,JSON.stringify(state))}catch(e){}
     document.getElementById('shared-auth').hidden=true;
-    document.getElementById('app').style.display='';
+    document.getElementById('app').style.display='block';
     render();sharedStatus('✓ Общая смета · '+sharedAs+' · синхронизировано');
     document.getElementById('shared-key-input').value='';
   }).withFailureHandler(err=>{
