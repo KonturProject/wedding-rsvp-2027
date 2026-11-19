@@ -37,7 +37,7 @@
   <div class="shared-login">
     <div style="font-size:27px;margin-bottom:14px">💍</div>
     <h1>Наша свадьба</h1><p>Одна смета для Игната и Леры. Изменения сохраняются в закрытой Google-таблице и синхронизируются между телефонами.</p>
-    <form id="shared-auth-form"><label for="shared-key-input">Ваш личный ключ доступа</label><input id="shared-key-input" type="password" minlength="24" autocomplete="off" placeholder="Вставьте ключ из Apps Script" required />
+    <form id="shared-auth-form"><label for="shared-key-input">Ваш личный ключ доступа</label><input id="shared-key-input" type="password" minlength="4" autocomplete="off" placeholder="Вставьте ключ из Apps Script" required />
       <button id="shared-auth-submit" type="submit">Открыть общую смету</button></form>
     <div id="login-error" role="alert"></div>
     <small>Используйте разные ключи для двух участников. Данные и ключи не публикуются в GitHub. Для работы нужен интернет.</small>
@@ -976,7 +976,7 @@ function startShared(){
   }
   document.getElementById('shared-auth-form').addEventListener('submit',e=>{
     e.preventDefault();const key=document.getElementById('shared-key-input').value.trim();
-    if(key.length<24)return showLoginError('Проверьте ключ. Он должен быть длиннее 24 символов.');
+    if(key.length<4)return showLoginError('Ключ должен содержать минимум 4 символа.');
     connectShared(key);
   });
   document.getElementById('shared-refresh').addEventListener('click',()=>refreshShared(true));
