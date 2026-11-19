@@ -35,7 +35,7 @@ function doGet() {
 }
 
 function identify_(key) {
-  if (typeof key !== 'string' || key.length < 24 || key.length > 128) throw new Error('Неверный ключ доступа');
+  if (typeof key !== 'string' || key.length < 4 || key.length > 128) throw new Error('Неверный ключ доступа');
   const props = PropertiesService.getScriptProperties();
   const secrets = [['IGNAT','Игнат'],['LERA','Лера']];
   const digest = s => Utilities.computeDigest(Utilities.DigestAlgorithm.SHA_256, s);
