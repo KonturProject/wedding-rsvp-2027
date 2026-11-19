@@ -883,8 +883,8 @@ function exportOffersTemplate(){
 }
 function moneyForImport(v,emptyAllowed=false){
   if(v==null||v==='')return emptyAllowed?0:null;
-  const raw=String(v).replace(/[\\s\\u00a0\\u202f]/g,'').replace(/₽|руб\\.?/gi,'').replace(',','.');
-  if(!/^\\d+(\\.\\d{1,2})?$/.test(raw))return null;
+  const raw=String(v).replace(/[\s\u00a0\u202f]/g,'').replace(/₽|руб\.?/gi,'').replace(',','.');
+  if(!/^\d+(\.\d{1,2})?$/.test(raw))return null;
   const n=Number(raw);
   return Number.isFinite(n)&&n>=0&&n<=10000000000?n:null;
 }
